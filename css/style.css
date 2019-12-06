@@ -124,21 +124,23 @@
 .dignity-list-item {
   margin: 0 0 35px 0;
   position: relative;
-  list-style-image: url(../img/Layer_2.png);
-  z-index: 1;
 }
 
 .dignity-list-item:before {
   display: block;
-  content: '';
+  content: '+';
   width: 32px;
   height: 32px;
   background-color: #445161;
   position: absolute;
+  top: 6px;
   left: -40px;
-  z-index: -1;
+  font-size: 40px;
+  color: #fff;
+  padding-top: 3px;
+  box-sizing: border-box;
+  text-align: center;
 }
-
 
 /*==== /dignity ==== */
 
@@ -274,12 +276,12 @@
 .buy_it_now {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: space-between;
   width: 100%;
   padding: 50px;
   box-sizing: border-box;
   font-family: "Arial";
-  align-items: flex-end;
 }
 
 .buy_it_now-title{
@@ -295,6 +297,8 @@
 .buy_it_now-item {
   background-color: #445162;
   border-radius: 5px;
+  width: 306px;
+  
 }
 
 
@@ -422,6 +426,10 @@ textarea {
 .contacts-form input[type="submit"]:hover {
   background-color: #e9e9e9;
   color: #441111;
+}
+
+.contacts-social_connection {
+  width: 400px;
 }
 
 .contacts-list {
